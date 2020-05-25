@@ -1,3 +1,4 @@
+from controllers.config import MediaServerConfig
 from flask import Flask
 
 
@@ -18,3 +19,4 @@ def god2():
 @app.route('/god3')
 def god3():
     return "Devnilton"
+
