@@ -1,5 +1,5 @@
-import requests
 from controllers.config import DeviceConnectionConfig
+import requests
 
 
 DeviceConfig = DeviceConnectionConfig()
@@ -26,4 +26,10 @@ def stop_camera():
     
     else:
         print('\n\nWasnt possible to deactivate camera')
+    pass
+
+def status_camera():
+    URL = DeviceConfig.DEVICE_STATUS_CAMERA
+    request = requests.get(url=URL)
+    print(request)
     pass
